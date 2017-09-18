@@ -29,14 +29,14 @@ public class MainActivity extends Activity {
                                 Toast.makeText(MainActivity.this,
                                         "Reply All!",
                                         Toast.LENGTH_SHORT).show();
-                                return true;
+                                return true; // menu processing consume here
                             case R.id.menu_forward:
                                 Toast.makeText(MainActivity.this,
                                         "Forward!",
                                         Toast.LENGTH_SHORT).show();
-                                return true;
+                                return true; // menu processing consume here
                             default:
-                                return false;
+                                return false; // normal menu processing happen
                         }
                     }
                 });
